@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "mas-cosas/04_como-entregar-las-tareas-uploader_val.html",
+    "href": "mas-cosas/04_como-entregar-las-tareas-uploader_val.html",
+    "title": "Lliurament dels treballs que formen part de l’avaluació continuada",
+    "section": "",
+    "text": "Com sabeu, al llarg del curs us enviaré tasques que formaran part de l’avaluació continuada**. Algunes d’aquestes tasques seran per resoldre a casa i d’altres es resoldran a l’aula."
+  },
+  {
+    "objectID": "mas-cosas/04_como-entregar-las-tareas-uploader_val.html#footnotes",
+    "href": "mas-cosas/04_como-entregar-las-tareas-uploader_val.html#footnotes",
+    "title": "Lliurament dels treballs que formen part de l’avaluació continuada",
+    "section": "Notas",
+    "text": "Notas\n\nHo sento, però segurament no ho podré enviar abans, però pensa que només és arrossegar i pujar un fitxer a una adreça web.↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "",
+    "text": "Slides 01: Presentació\nSlides 02: Primers passos\nSlides 03: R-base"
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "",
+    "text": "Slides 01: Presentació\nSlides 02: Primers passos\nSlides 03: R-base"
+  },
+  {
+    "objectID": "index.html#guions",
+    "href": "index.html#guions",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "2. Guions",
+    "text": "2. Guions\n\nGuió 01"
+  },
+  {
+    "objectID": "index.html#logistica",
+    "href": "index.html#logistica",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "3. Logistica",
+    "text": "3. Logistica\n\nEtherpad\nPosit Cloud Project\nAula virtual"
+  },
+  {
+    "objectID": "index.html#material-addicional",
+    "href": "index.html#material-addicional",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "4. Material addicional",
+    "text": "4. Material addicional\n\nR for Data Science 2ª ed.. Aquí la primera edició, i aquí la 1ª ed. en castellà.\nBigData 2023\nCurso de introducción a Quarto"
+  },
+  {
+    "objectID": "index.html#software",
+    "href": "index.html#software",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "5. Software",
+    "text": "5. Software\n\n\n\n\n\n\n\nAl curs farem servir principalment 3 programes. Principalment farem servir R a través de RStudio. També farem servir Quarto però serà al final del curs.\nEs recomana tenir instal·lades versions recents dels 3 programes. Tens instruccions d’instal·lació més avall\nÉs molt-molt convenient acudir al curs amb el teu propi ordinador (i un ratolí)\n\n\n\n\nSoftware (instal·lació)\n\n\n\n\n\n\nInstal·lació de R i RStudio\n\n\n\n\n\n\nAl curs farem servir 3 programes: R, RStudio i Quarto, així que hem d’instal·lar-los\nHas d’instal·lar els programes en aquest ordre:\n\n\nR: https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\n\n\nPer això, només has de descarregar les versions dels instal·ladors adequades per al teu sistema operatiu\n\n\n\n\nInstal·lació de paquets\n\n\n\n\n\n\nInstal·lació de paquets\n\n\n\n\n\n\nAl curs també farem servir alguns paquets de R, així que haurem d’instal·lar-los… però us ho explicaré a classe\nEls paquets s’han d’instal·lar un cop hagis instal·lat R i RStudio\n\n\n\n\n\n\n\n\n\n\nInstal·lació de paquets: més detalls\n\n\n\n\n\n\nRecorda que Els paquets no són necessaris per al primer dia del curs, així que us ajudaré a instal·lar-los a classe\n\nAlguns paquets s’han de compilar de manera que cal tenir les eines necessàries, així que:\n-Si utilitzes Windows instal·larem Rtools. Aquí pots descarregar-te l’instal·lador adequat\n\nSi teniu un Mac, haureu d’instal·lar el Xcode Command Line Tools. El més normal és que ho tinguis ja instal·lat, si no fos el cas, aquí t’expliquen com fer-ho. A més, com ens expliquen aquí, si tens un Mac, és convenient instal·lar XQuartz, per això només has de buscar l’instal·lador a https://www.xquartz.org/\nFinalment, per instal·lar alguns dels paquets que farem servir durant el curs haurem de executar les següents instruccions:\n\n\n\n\nCodi per instal·lar els paquets#- instalación de paquetes ---------------------------------\n\ninstall.packages(\"meme\")\n\ninstall.packages(\"devtools\")\n\ndevtools::install_github(\"sctyner/memer\")\n\ninstall.packages(\"pak\")\n\n\n#-------------------------------------------------------------\n\nmys_pkgs &lt;- c(\"tidyverse\", \"curl\", \"eurostat\", \"here\", \"palmerpenguins\", \"quantmod\", \"rio\", \"gt\", \"DT\", \"gapminder\", \"markdown\")\npak::pkg_install(mys_pkgs)   \n\nmys_pkgs &lt;- c(\"usethis\", \"janitor\", \"ggthemes\", \"gganimate\", \"perezp44/pjpv.curso.R.2022\", \"sjPlot\")\npak::pkg_install(mys_pkgs)   \n\nmys_pkgs &lt;- c(\"sf\", \"rcartocolor\", \"rmapshaper\", \"gtExtras\", \"patchwork\", \"magick\")\npak::pkg_install(mys_pkgs)   \n\nmys_pkgs &lt;- c(\"kableExtra\", \"modelsummary\", \"rpivotTable\", \"widyr\", \"irlba\", \"tmap\")\npak::pkg_install(mys_pkgs)\n\nmys_pkgs &lt;- c(\"GGally\", \"ggtext\", \"Financial-Times/ftplottools\", \"maps\")\npak::pkg_install(mys_pkgs)  \n\nmys_pkgs &lt;- c(\"summarytools\", \"glin/reactable\", \"agstn/dataxray\", \"naniar\")\npak::pkg_install(mys_pkgs)  \n\nmys_pkgs &lt;- c(\"DataExplorer\", \"corrr\", \"inspectdf\", \"explore\", \"stargazer\", \"apaTables\")\npak::pkg_install(mys_pkgs)   \n\nmys_pkgs &lt;- c(\"easystats\", \"plotly\")\npak::pkg_install(mys_pkgs)\n\n#- finalmente, si te instalas todos los paquetes, se instalarán 284 pkg's aprox. (q ocupan 842 MB aprox.)\npkgs &lt;- pak::pkg_list()\n\n#- normalmente tendrás 2 librerías\n.libPaths()\n#- en la primera tienes los pkgs de \"R-base\": \"C:/Program Files/R/R-4.3.0/library\"   \n#- en la segunda tienes los paquetes q se instala un usuario:  \"C:/Users/Usuario/AppData/Local/R/win-library/4.3\" \n\n\n#- más cosas ---------------------------------------\n# usethis::edit_rstudio_prefs()\n# usethis::use_blank_slate() \n\n# quarto install tool tinytext\n# quarto install tinytex --update-path\n# quarto install tool chromium"
+  },
+  {
+    "objectID": "index.html#més-coses",
+    "href": "index.html#més-coses",
+    "title": "ITA 2024-25 (grup M)",
+    "section": "6. Més coses",
+    "text": "6. Més coses\nLliurament de treballs\nDurant el curs, sobretot les primeres setmanes, us enviaré tasques, algunes per resoldre a l’aula i d’altres per resoldre a casa. Aquestes tasques generalment formaran part de l’avaluació continuada. A sota teniu les instruccions per al lliurament de les tasques:\n\n\nInstruccions de lliurament de les tasques de l’avaluació continuada, i les mateixes instruccions en castellà, aquí"
+  },
+  {
+    "objectID": "mas-cosas/04_como-entregar-las-tareas-uploader.html",
+    "href": "mas-cosas/04_como-entregar-las-tareas-uploader.html",
+    "title": "Entrega de los trabajos que formen parte de la evaluación continua",
+    "section": "",
+    "text": "Como sabéis, a lo largo del curso os mandaré tareas que formarán parte de la evaluación continua. Algunas de estas tareas serán para resolver en casa y otras se resolverán en el aula."
+  },
+  {
+    "objectID": "mas-cosas/04_como-entregar-las-tareas-uploader.html#footnotes",
+    "href": "mas-cosas/04_como-entregar-las-tareas-uploader.html#footnotes",
+    "title": "Entrega de los trabajos que formen parte de la evaluación continua",
+    "section": "Notas",
+    "text": "Notas\n\nLo siento, pero seguramente no podré enviarlo antes, pero piensa que solo es arrastar y subir un fichero a una dirección web.↩︎"
+  }
+]
