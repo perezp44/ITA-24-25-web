@@ -1,0 +1,180 @@
+---
+#title: "ITA 24-25 (grup M; módul practic) "
+toc: true
+link-external-newwindow: true
+---
+
+
+## 1. Slides
+
+- [Slides 01: Presentació](./slides/00_presentacion_val.html){target="_blank"}
+
+- [Slides 02: Primers passos](./slides/01_primeros-pasos_val.html){target="_blank"}
+
+- [Slides 03: R-base](./slides/slides_03_R-base-01_val.html){target="_blank"}
+
+
+
+## 2. Guions
+
+- [Guió 01](./guiones/guion_01_ITA.zip){target="_blank"}
+
+
+## 3. Logistica
+
+- [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}
+
+- [Posit Cloud Project](https://posit.cloud/content/8706947)
+
+- [Aula virtual](https://aulavirtual.uv.es/course/view.php?id=84280){target="_blank"}
+
+
+
+## 4. Material addicional
+
+- [R for Data Science 2ª ed.](https://r4ds.hadley.nz/). [Aquí](https://r4ds.had.co.nz/){target="_blank"} la primera edició, i [aquí](https://es.r4ds.hadley.nz/){target="_blank"} la 1ª ed. en castellà.
+
+
+- [BigData 2023](https://perezp44.github.io/intro-ds-23-24-web/){target="_blank"}
+
+- [Curso de introducción a Quarto](https://perezp44.github.io/intro.to.quarto.2024/){target="_blank"}
+
+
+
+<br>
+
+## 5. Software
+
+::: {.callout-note appearance="minimal" icon="false"}
+
+- Al curs farem servir principalment **3 programes**. Principalment farem servir [R](https://cran.r-project.org/){target="_blank"} a través de [RStudio](https://www.rstudio.com/products/rstudio/download/# download){target="_blank"}. També farem servir [Quarto](https://quarto.org/) però serà al final del curs.
+
+- Es recomana tenir instal·lades **versions recents** dels 3 programes. Tens instruccions d'instal·lació més avall
+
+- És molt-molt convenient acudir al curs amb el teu propi ordinador (i un ratolí)
+:::
+
+
+### Software (instal·lació)
+
+::: {.callout-important collapse="false" appearance="default" icon="false"}
+### Instal·lació de R i RStudio
+
+- Al curs farem servir 3 programes: R, RStudio i Quarto, així que hem d'instal·lar-los
+
+- Has d'instal·lar els programes en aquest ordre:
+
+ 1. R: <https://cran.r-project.org/>{target="_blank"}
+
+ 2. RStudio: <https://posit.co/download/rstudio-desktop/>{target="_blank"}
+
+
+- Per això, només has de descarregar les versions dels instal·ladors adequades per al teu sistema operatiu
+:::
+
+
+### Instal·lació de paquets
+
+
+::: {.callout-important collapse="true" appearance="default" icon="false"}
+### Instal·lació de paquets
+
+- Al curs també farem servir alguns paquets de R, així que haurem d'instal·lar-los... però **us ho explicaré a classe**
+
+- Els paquets s'han d'instal·lar un cop hagis instal·lat R i RStudio
+:::
+
+
+
+
+::: {.callout-important collapse="true" appearance="default" icon="false"}
+### Instal·lació de paquets: més detalls
+
+- Recorda que Els paquets no són necessaris per al primer dia del curs, així que us ajudaré a instal·lar-los a classe
+
+- Alguns paquets s'han de compilar de manera que cal tenir les eines necessàries, així que:
+
+    -Si utilitzes Windows instal·larem **Rtools**. [Aquí](https://cran.r-project.org/bin/windows/Rtools/) pots descarregar-te l'instal·lador adequat
+    
+    - Si teniu un Mac, haureu d'instal·lar el **Xcode Command Line Tools**. El més normal és que ho tinguis ja instal·lat, si no fos el cas, [aquí](https://www.makeuseof.com/install-xcode-command-line-tools/) t'expliquen com fer-ho. A més, com ens expliquen [aquí](https://psyteachr.github.io/msc-data-skills/installingr.html), si tens un Mac, és convenient instal·lar **XQuartz**, per això només has de buscar l'instal·lador a <https://www.xquartz.org/>
+
+  - Finalment, per instal·lar alguns dels paquets que farem servir durant el curs haurem de **executar les següents instruccions**:
+  
+  
+```{r}
+#| eval: false
+#| code-line-numbers: false
+#| code-overflow: wrap
+#| code-fold: true
+#| code-summary: "Codi per instal·lar els paquets"
+
+#- instalación de paquetes ---------------------------------
+
+install.packages("meme")
+
+install.packages("devtools")
+
+devtools::install_github("sctyner/memer")
+
+install.packages("pak")
+
+
+#-------------------------------------------------------------
+
+mys_pkgs <- c("tidyverse", "curl", "eurostat", "here", "palmerpenguins", "quantmod", "rio", "gt", "DT", "gapminder", "markdown")
+pak::pkg_install(mys_pkgs)   
+
+mys_pkgs <- c("usethis", "janitor", "ggthemes", "gganimate", "perezp44/pjpv.curso.R.2022", "sjPlot")
+pak::pkg_install(mys_pkgs)   
+
+mys_pkgs <- c("sf", "rcartocolor", "rmapshaper", "gtExtras", "patchwork", "magick")
+pak::pkg_install(mys_pkgs)   
+
+mys_pkgs <- c("kableExtra", "modelsummary", "rpivotTable", "widyr", "irlba", "tmap")
+pak::pkg_install(mys_pkgs)
+
+mys_pkgs <- c("GGally", "ggtext", "Financial-Times/ftplottools", "maps")
+pak::pkg_install(mys_pkgs)  
+
+mys_pkgs <- c("summarytools", "glin/reactable", "agstn/dataxray", "naniar")
+pak::pkg_install(mys_pkgs)  
+
+mys_pkgs <- c("DataExplorer", "corrr", "inspectdf", "explore", "stargazer", "apaTables")
+pak::pkg_install(mys_pkgs)   
+
+mys_pkgs <- c("easystats", "plotly")
+pak::pkg_install(mys_pkgs)
+
+#- finalmente, si te instalas todos los paquetes, se instalarán 284 pkg's aprox. (q ocupan 842 MB aprox.)
+pkgs <- pak::pkg_list()
+
+#- normalmente tendrás 2 librerías
+.libPaths()
+#- en la primera tienes los pkgs de "R-base": "C:/Program Files/R/R-4.3.0/library"   
+#- en la segunda tienes los paquetes q se instala un usuario:  "C:/Users/Usuario/AppData/Local/R/win-library/4.3" 
+
+
+#- más cosas ---------------------------------------
+# usethis::edit_rstudio_prefs()
+# usethis::use_blank_slate() 
+
+# quarto install tool tinytext
+# quarto install tinytex --update-path
+# quarto install tool chromium
+```
+
+:::
+
+
+
+<br>
+
+## 6. Més coses
+
+### Lliurament de treballs
+
+Durant el curs, sobretot les primeres setmanes, us enviaré tasques, algunes per resoldre a l'aula i d'altres per resoldre a casa. Aquestes tasques generalment formaran part de l'avaluació continuada. A sota teniu les instruccions per al lliurament de les tasques:
+
+- [Instruccions de lliurament de les tasques de l'avaluació continuada](./mas-cosas/04_como-entregar-las-tareas-uploader_val.html){target="_blank"}, i les mateixes instruccions en castellà, [aquí](./mas-cosas/04_como-entregar-las-tareas-uploader.html){target="_blank"}
+
+<br><br>
