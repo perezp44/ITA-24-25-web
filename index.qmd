@@ -7,11 +7,11 @@ link-external-newwindow: true
 
 ## 1. Slides
 
-- [Slides 01: Presentació](./slides/slides_01_presentacion_val.html){target="_blank"}
+- [Slides 01: Presentació](./slides/slides_01_presentacion_val.html){target="_blank"} (en castellà [aquí](./slides/slides_01_presentacion.html){target="_blank"})
 
-- [Slides 02: Primers passos](./slides/slides_02_primeros-pasos_val.html){target="_blank"}
+- [Slides 02: Primers passos](./slides/slides_02_primeros-pasos_val.html){target="_blank"}(en castellà [aquí](./slides/slides_02_primeros-pasos.html){target="_blank"})
 
-- [Slides 03: R-base](./slides/slides_03_R-base-01_val.html){target="_blank"}
+- [Slides 03: R-base](./slides/slides_03_R-base-01_val.html){target="_blank"} (en castellà [aquí](./slides/slides_03_R-base-01.html){target="_blank"})
 
 
 
