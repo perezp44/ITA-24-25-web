@@ -13,6 +13,8 @@ link-external-newwindow: true
 
 - [Slides 03: R-base](./slides/slides_03_R-base-01_val.html){target="_blank"} (en castellà [aquí](./slides/slides_03_R-base-01.html){target="_blank"})
 
+- [Slides 04: Importar y exportar datos](./slides/slides_04_cargar-datos_val.html){target="_blank"} (en castellà [aquí](./slides/slides_04_cargar-datos.html){target="_blank"})
+
 
 
 ## 2. Guions
