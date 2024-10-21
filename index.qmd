@@ -17,6 +17,8 @@ link-external-newwindow: true
 
 - [Slides 05: Data munging (A)](./slides/slides_05A_data-munging_val.html){target="_blank"} (en castellà [aquí](./slides/slides_05A_data-munging.html){target="_blank"})
 
+- [Slides 05: Data munging (B)](./slides/slides_05B_data-munging_val.html){target="_blank"} (en castellà [aquí](./slides/slides_05B_data-munging.html){target="_blank"})
+
 
 
 
