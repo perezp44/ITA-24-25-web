@@ -21,6 +21,9 @@ link-external-newwindow: true
 
 - [Slides 05: Data munging (C)](./slides/slides_05C_data-munging_val.html){target="_blank"} (en castellà [aquí](./slides/slides_05C_data-munging.html){target="_blank"})
 
+- [Slides 06: ggplot2](./slides/slides_06_ggplot2_A_val.html){target="_blank"} (en castellà [aquí](./slides/slides_06_ggplot2_A.html){target="_blank"})
+
+
 
 
 
