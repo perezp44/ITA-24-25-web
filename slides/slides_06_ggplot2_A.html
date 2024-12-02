@@ -6262,19 +6262,20 @@ Es importante que veas que estas 3 expresiones **hacen el mismo gráfico**:
 
 
 ``` r
-ggplot(data = iris, aes(Sepal.Length, Petal.Length)) + geom_point()
+ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length)) + 
+  geom_point()
 
-ggplot(data = iris) + geom_point(aes(Sepal.Length, Petal.Length))
+ggplot(data = iris) + 
+  geom_point(aes(x = Sepal.Length, y = Petal.Length))
 
-ggplot() + geom_point(data = iris, aes(Sepal.Length, Petal.Length))
+ggplot() + 
+  geom_point(data = iris, aes(x = Sepal.Length, y = Petal.Length))
 ```
 
 
 --
 
 &lt;img src=&quot;data:image/png;base64,#slides_06_ggplot2_A_files/figure-html/unnamed-chunk-13-1.png&quot; width=&quot;46%&quot; style=&quot;display: block; margin: auto;&quot; /&gt;
-
-&lt;br&gt;
 
 --
 
@@ -6291,13 +6292,13 @@ ggplot() + geom_point(data = iris, aes(Sepal.Length, Petal.Length))
 
 
 ``` r
-ggplot(data = iris, aes(Sepal.Length, Petal.Length, color = Species)) + 
+ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) + 
      geom_point() + geom_smooth()
 
-ggplot(data = iris, aes(Sepal.Length, Petal.Length)) + 
+ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length)) + 
     geom_point(aes(color = Species)) + geom_smooth()
 
-ggplot(data = iris, aes(Sepal.Length, Petal.Length)) + 
+ggplot(data = iris, aes(x = Sepal.Length, y = Petal.Length)) + 
     geom_point() + geom_smooth(aes(color = Species))
 ```
 
@@ -6367,19 +6368,19 @@ ggplot() +
 
 ``` r
 
-ggplot(iris, aes(Sepal.Length, Petal.Length)) + 
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) + 
   geom_point() + geom_smooth()
 
 
-ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) + 
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) + 
   geom_point() + geom_smooth()
 
 
-ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) + 
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) + 
    geom_point(color = &quot;purple&quot;) + geom_smooth()
 
 
-ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) + 
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) + 
   geom_point() + geom_smooth(color = &quot;brown&quot;)
 
 ```
